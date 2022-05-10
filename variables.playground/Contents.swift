@@ -64,3 +64,17 @@ let justMoreThanAMillion = 1_000_000.000_000_1
 let three = 3                               // Data type: Int.
 let decimalNumber = 0.1415926               // Data type: Double.
 let piNum = Double(three) + decimalNumber   // Data type: Double.
+
+/**#############
+## Type Alias ##
+################*/
+
+/**
+ Se crea una "variable" de un tipo de dato.
+ Esto para solo modificar una parte del código en el tipo de dato y no cambiar todos los tipos de datos
+ de todas las variables.
+ */
+
+typealias audioSample = UInt16
+var maxAmplitude = audioSample.max
+var minAmplitude = audioSample.min
