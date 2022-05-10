@@ -91,3 +91,28 @@ if isAged {
 } else {
     print("You can't pass to the party 😎")
 }
+
+/**##############**/
+/**### TUPLAS ###**/
+/**##############**/
+let httpError404 = (404, "Page not found!")
+let (statusCode, messageError) = httpError404
+print("The status response is \(statusCode)")
+print("The message response is \(messageError)")
+
+let (justStatusCode, _) = httpError404
+let (_, justMessage) = httpError404
+
+
+if justStatusCode != 200 {
+    print("The message response is \(justMessage)")
+}
+
+print("The error code \(httpError404.0) with message \(httpError404.1)")
+
+let response = (
+    statusCode: 200,
+    message: "Ok"
+)
+
+print("The response status is \(response.statusCode) with message \(response.message)")
