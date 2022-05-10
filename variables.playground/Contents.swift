@@ -78,3 +78,16 @@ let piNum = Double(three) + decimalNumber   // Data type: Double.
 typealias audioSample = UInt16
 var maxAmplitude = audioSample.max
 var minAmplitude = audioSample.min
+
+/**########################**/
+
+var isAged : Bool
+var myAge : Int8 = 31
+
+isAged = myAge >= 18
+
+if isAged {
+    print("You can pass to the party 🥳")
+} else {
+    print("You can't pass to the party 😎")
+}
