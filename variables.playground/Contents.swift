@@ -116,3 +116,29 @@ let response = (
 )
 
 print("The response status is \(response.statusCode) with message \(response.message)")
+
+
+/**#######################**/
+/**### OPTIONALS Y NIL ###**/
+/**#######################**/
+
+let posibleAge = "Omar"
+let convertedAge = Int(posibleAge)  // Entero opcional (Posible entero) -> Optional (Int?).
+
+// Example server code response.
+var responseCodeServer : Int? = 404  // Tipo de dato opcional.
+responseCodeServer = nil
+
+var surveyAnswer : String?
+surveyAnswer = "Estoy conforme con el contenido del curso."
+print(surveyAnswer)
+
+
+/**#######################**/
+/**### OPTIONALS Y NIL ###**/
+/**#######################**/
+
+
+
+
+
