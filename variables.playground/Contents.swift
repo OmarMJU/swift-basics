@@ -194,3 +194,29 @@ print("The value of assummedString is \(assummedString)")
 print("The value of implicitString is \(implicitString)")
 
 
+/**###################**/
+/**### TRY - CATCH ###**/
+/**###################**/
+func divideNumeros(numeroUno : Int, numeroDos : Int) throws -> Int {
+    if numeroDos == 0 {
+        precondition(numeroDos == 0, "El numero dos no puede ser cero")
+    }
+    
+    return numeroUno/numeroDos
+}
+
+do {
+    let rest : Int = try divideNumeros(numeroUno: 4, numeroDos: 2)
+    assert(rest == 2, "Todo salio correcto")
+    print("All success!")
+} catch {
+    print("Not is possible make a division by zero: \(error)")
+}
+
+
+/**##############################**/
+/**### ASSERT - PRECONDITIONS ###**/
+/**##############################**/
+// Son solo para modo debug.
+// Ejemplo de assert linea 211.
+// Ejemplo de precondition linea 202
