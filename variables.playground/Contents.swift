@@ -155,6 +155,32 @@ print("The value of data is \(forceData!)")
 //print("The value of data is \(forceData != nil ? forceData! : "Undefined")")
 
 
+/**########################**/
+/**### OPTIONAL BINDING ###**/
+/**########################**/
+
+var dataOptional : String?
+dataOptional = "I'm the value of the variable"
+
+if let realData = dataOptional {  // Si esta condición se cumple indica que forceData no tenia un valor Nil y asigna su valor a realData.
+    print("El String \(dataOptional) tiene un valor de \(realData)")
+} else {
+    print("Holy shit!! the value of the variable is nil!! 😱: \(dataOptional)")
+}
 
 
+var myFirstNumber = "45"
+var mySecondNumber = "50"
 
+if let myFirstNumberReal = Int16(myFirstNumber),
+   let mySecondNumberReal = Int16(mySecondNumber),
+   myFirstNumberReal < mySecondNumberReal {
+    print("The addition of my numbers is \(myFirstNumberReal + mySecondNumberReal)")
+} else {
+    print("Something is wrong!!")
+}
+
+
+/**########################**/
+/**### UNWRAP IMPLICITO ###**/
+/**########################**/
