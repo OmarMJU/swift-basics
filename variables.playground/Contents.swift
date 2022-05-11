@@ -184,3 +184,13 @@ if let myFirstNumberReal = Int16(myFirstNumber),
 /**########################**/
 /**### UNWRAP IMPLICITO ###**/
 /**########################**/
+
+let possibleString : String? = "An optional string"
+let forcedString : String = possibleString!            // Mala práctica... muy mala.
+
+let assummedString : String! = "Some value because this string never can be nil"
+let implicitString : String = assummedString
+print("The value of assummedString is \(assummedString)")
+print("The value of implicitString is \(implicitString)")
+
+
