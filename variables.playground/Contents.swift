@@ -122,7 +122,7 @@ print("The response status is \(response.statusCode) with message \(response.mes
 /**### OPTIONALS Y NIL ###**/
 /**#######################**/
 
-let posibleAge = "Omar"
+let posibleAge = "31"
 let convertedAge = Int(posibleAge)  // Entero opcional (Posible entero) -> Optional (Int?).
 
 // Example server code response.
@@ -134,9 +134,25 @@ surveyAnswer = "Estoy conforme con el contenido del curso."
 print(surveyAnswer)
 
 
-/**#######################**/
-/**### OPTIONALS Y NIL ###**/
-/**#######################**/
+/**########################**/
+/**### FORCE UNWRAPPING ###**/
+/**########################**/
+
+// Tomando variables del ejemplo anterior.
+
+if convertedAge != nil {
+    print("I have your age 🥹 \(convertedAge!)")
+} else {
+    print("I miss 😩")
+}
+
+
+var forceData : String?
+forceData = forceData != nil ? "This data is forced" : "Undefined"
+print("The value of data is \(forceData!)")
+
+//forceData = "This data is forced"
+//print("The value of data is \(forceData != nil ? forceData! : "Undefined")")
 
 
 
